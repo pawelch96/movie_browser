@@ -1,0 +1,12 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.gr.dart"
+  errors:
+    missing_required_param: warning
+    missing_return: warning
+
+linter:
+  rules:

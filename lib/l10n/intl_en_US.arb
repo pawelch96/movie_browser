@@ -1,0 +1,11 @@
+{
+    "appTitle": "Movie Browser",
+    "percentRating": "{rating}%",
+    "budget": "Budget",
+    "revenue": "Revenue",
+    "shouldIWatchedItToday" : "Should I watch it today?",
+    "yes": "Yes!",
+    "no": "No!",
+    "searchHint": "Search...",
+    "errorGenericText": "Something went wrong!"
+}
