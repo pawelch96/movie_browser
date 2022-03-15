@@ -30,17 +30,15 @@ class MoviesList extends StatelessWidget {
               ),
           onTap: () => Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (context) {
-                return BlocProvider<MovieDetailsBloc>(
-                  create: (context) => MovieDetailsBloc()
-                    ..add(
-                      MovieDetailsEvent.getMovieDetails(
-                        _movie.id,
-                      ),
+              builder: (context) => BlocProvider<MovieDetailsBloc>(
+                create: (context) => MovieDetailsBloc()
+                  ..add(
+                    MovieDetailsEvent.getMovieDetails(
+                      _movie.id,
                     ),
-                  child: const MovieDetailsPage(),
-                );
-              },
+                  ),
+                child: const MovieDetailsPage(),
+              ),
             ),
           ),
         );

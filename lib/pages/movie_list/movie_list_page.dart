@@ -22,12 +22,6 @@ class MovieListPage extends StatelessWidget {
         ],
         child: Scaffold(
           appBar: AppBar(
-            actions: const [
-              IconButton(
-                icon: Icon(Icons.movie_creation_outlined),
-                onPressed: null,
-              ),
-            ],
             title: Text(S.of(context).appTitle),
           ),
           body: Column(
@@ -40,13 +34,11 @@ class MovieListPage extends StatelessWidget {
                         );
                   }
                 },
-                builder: (context, state) {
-                  return SearchBox(
-                    onSubmitted: (text) => context.read<SearchBloc>().add(
-                          Submit(text),
-                        ),
-                  );
-                },
+                builder: (context, state) => SearchBox(
+                  onSubmitted: (text) => context.read<SearchBloc>().add(
+                        Submit(text),
+                      ),
+                ),
               ),
               Expanded(
                 child: BlocBuilder<MoviesBloc, MoviesState>(

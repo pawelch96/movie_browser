@@ -15,7 +15,7 @@ class MovieApp extends StatelessWidget {
           GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: S.delegate.supportedLocales,
-        theme: ThemeData(primarySwatch: Colors.amber),
+        theme: ThemeData(primarySwatch: Colors.blue),
         home: const MovieListPage(),
       );
 }

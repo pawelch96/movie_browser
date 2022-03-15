@@ -1,24 +1,17 @@
-# MovieBrowser
+# Flutter Movie Browser
 
-This app is a part of recruitment task for Flutter Developer position at Droids on Roids. It allows users to browse movie database and look for some interesting financial statistics. It uses The Movie Database API as a source of data about movies, its documentation is available [here](https://developers.themoviedb.org/3/getting-started/introduction).
+This app allows users to browse movie database and look for some interesting financial statistics. It uses The Movie Database API as a source of data about movies, its documentation is available [here](https://developers.themoviedb.org/3/getting-started/introduction).
 
-## Recruitment task
+## App content
 
-Right now, app consists of only one screen: movie list. It allows user to search movies in The Movie Database. Your task is to add some new features to our app:
+App allows user to search movies in The Movie Database. It sorts results descending by average vote rating. Then it fetches movie details and shows its budget and revenue. Also if a profit from the movie is higher than $1,000,000 and it is Sunday, the app tells that the movie should be watched today.
 
-1. As a warm up, sort movies fetched from the api by vote average.
+## Requirements
 
-2. Next, implement navigation between movie list and movie details screen. To not spent too much time on programming simple UI, I've already implemented movie details screen for you. It is available as `MovieDetailsPage` class.
+To run the app, it is neccessary to provide API key, which can be obtained by registering an account [here](https://www.themoviedb.org/) and requesting for the API key.
 
-3. After that, fetch detailed information about the selected movie and show its title (as a navigation bar title), budget and revenue (formatted as values in dollars).
+To regenerate JSON models and freezed files, run:
 
-4. Finally, let's add some logic to the app. As you can see, there is one more label on the Movie Details screen: the "Should I watch it today?" label. Let's say, that I should watch the movie today, **if today is sunday and profit from the movie is bigger than $1000000** (by profit I mean a difference between revenue and budget). So, under that label show value "Yes" if the following criteria are met or "No", if they are not.
-
-## Tips
-
-To regenerate JSON models, use the following command:
 ```
-flutter pub run build_runner build
+flutter pub run build_runner build --delete-conflicting-outputs
 ```
-
-Good luck!

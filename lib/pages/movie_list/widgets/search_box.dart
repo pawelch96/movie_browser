@@ -12,7 +12,7 @@ class SearchBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Container(
         decoration: BoxDecoration(
-          color: Colors.amberAccent,
+          color: Colors.blueAccent,
           border: Border(
             bottom: BorderSide(color: Colors.black.withOpacity(0.1)),
           ),
@@ -20,11 +20,21 @@ class SearchBox extends StatelessWidget {
         child: TextField(
           textAlignVertical: TextAlignVertical.center,
           textInputAction: TextInputAction.search,
+          style: const TextStyle(
+            color: Colors.white,
+          ),
           decoration: InputDecoration(
-            prefixIcon: const Icon(Icons.search),
+            prefixIcon: const Icon(
+              Icons.search,
+              color: Colors.white,
+            ),
             border: InputBorder.none,
             hintText: S.of(context).searchHint,
+            hintStyle: const TextStyle(
+              color: Colors.white,
+            ),
           ),
+          cursorColor: Colors.white,
           onSubmitted: onSubmitted,
         ),
       );

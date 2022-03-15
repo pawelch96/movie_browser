@@ -15,7 +15,7 @@ void main() {
   group('ApiService', () {
     late ApiServiceImpl apiService;
     late http.Client httpClient;
-    const apiKey = '052afdb6e0ab9af424e3f3c8edbb33fb';
+    const apiKey = 'api_key';
 
     setUpAll(() {
       registerFallbackValue(FakeUri());

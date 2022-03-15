@@ -12,26 +12,24 @@ class MovieDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) =>
       BlocBuilder<MovieDetailsBloc, MovieDetailsState>(
-        builder: (context, state) {
-          return Scaffold(
-            appBar: AppBar(
-              title: state is MovieDetailsFetched
-                  ? Text(
-                      state.movieDetails.title,
-                    )
-                  : null,
+        builder: (context, state) => Scaffold(
+          appBar: AppBar(
+            title: state is MovieDetailsFetched
+                ? Text(
+                    state.movieDetails.title,
+                  )
+                : null,
+          ),
+          body: state.when(
+            loading: () => const Center(
+              child: CircularProgressIndicator(),
             ),
-            body: state.when(
-              loading: () => const Center(
-                child: CircularProgressIndicator(),
-              ),
-              movieDetailsFetched: (movieDetails) => MovieDetailsView(
-                details: movieDetails,
-                shouldItBeWatchedToday: state.shouldItBeWatchedToday,
-              ),
-              error: () => const ErrorGenericWidget(),
+            movieDetailsFetched: (movieDetails) => MovieDetailsView(
+              details: movieDetails,
+              shouldItBeWatchedToday: state.shouldItBeWatchedToday,
             ),
-          );
-        },
+            error: () => const ErrorGenericWidget(),
+          ),
+        ),
       );
 }

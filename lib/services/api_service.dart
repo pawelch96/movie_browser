@@ -18,7 +18,7 @@ class ApiServiceImpl implements ApiService {
 
   final http.Client _httpClient;
 
-  static const apiKey = '052afdb6e0ab9af424e3f3c8edbb33fb';
+  static const apiKey = 'api_key'; //TODO provide API key
   static const baseUrl = 'https://api.themoviedb.org/3';
 
   @override
