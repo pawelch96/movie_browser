@@ -1,5 +1,5 @@
-import 'package:flutter_recruitment_task/models/movie.dart';
 import 'package:json_annotation/json_annotation.dart';
+import 'package:movie_browser/models/movie.dart';
 
 part 'movie_list.g.dart';
 

@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter_recruitment_task/extensions/list_ext.dart';
-import 'package:flutter_recruitment_task/models/movie.dart';
-import 'package:flutter_recruitment_task/models/movie_details.dart';
-import 'package:flutter_recruitment_task/services/api_service.dart';
 import 'package:injectable/injectable.dart';
+import 'package:movie_browser/extensions/list_ext.dart';
+import 'package:movie_browser/models/movie.dart';
+import 'package:movie_browser/models/movie_details.dart';
+import 'package:movie_browser/services/api_service.dart';
 
 abstract class MovieRepository {
   Future<Either<Exception, List<Movie>>> searchMovies(String query);

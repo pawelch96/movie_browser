@@ -1,9 +1,9 @@
-import 'package:flutter_recruitment_task/models/movie.dart';
-import 'package:flutter_recruitment_task/models/movie_details.dart';
-import 'package:flutter_recruitment_task/services/api_service.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:mocktail/mocktail.dart';
+import 'package:movie_browser/models/movie.dart';
+import 'package:movie_browser/models/movie_details.dart';
+import 'package:movie_browser/services/api_service.dart';
 
 class FakeUri extends Fake implements Uri {}
 

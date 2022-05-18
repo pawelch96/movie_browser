@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_recruitment_task/bloc/movies_bloc/movies_bloc.dart';
-import 'package:flutter_recruitment_task/bloc/search/search_bloc.dart';
-import 'package:flutter_recruitment_task/generated/l10n.dart';
-import 'package:flutter_recruitment_task/pages/movie_list/widgets/movies_list.dart';
-import 'package:flutter_recruitment_task/pages/movie_list/widgets/search_box.dart';
-import 'package:flutter_recruitment_task/pages/shared/error_widget.dart';
+import 'package:movie_browser/bloc/movies_bloc/movies_bloc.dart';
+import 'package:movie_browser/bloc/search/search_bloc.dart';
+import 'package:movie_browser/generated/l10n.dart';
+import 'package:movie_browser/pages/movie_list/widgets/movies_list.dart';
+import 'package:movie_browser/pages/movie_list/widgets/search_box.dart';
+import 'package:movie_browser/pages/shared/error_widget.dart';
 
 class MovieListPage extends StatelessWidget {
   const MovieListPage({Key? key}) : super(key: key);

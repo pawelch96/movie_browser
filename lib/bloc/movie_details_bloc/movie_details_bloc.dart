@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_recruitment_task/injection/injection.dart';
-import 'package:flutter_recruitment_task/models/movie_details.dart';
-import 'package:flutter_recruitment_task/repositories/movie_repository.dart';
+import 'package:movie_browser/injection/injection.dart';
+import 'package:movie_browser/models/movie_details.dart';
+import 'package:movie_browser/repositories/movie_repository.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'movie_details_bloc.freezed.dart';

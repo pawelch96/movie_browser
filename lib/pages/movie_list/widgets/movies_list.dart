@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_recruitment_task/bloc/movie_details_bloc/movie_details_bloc.dart';
-import 'package:flutter_recruitment_task/generated/l10n.dart';
-import 'package:flutter_recruitment_task/models/movie.dart';
-import 'package:flutter_recruitment_task/pages/movie_details/movie_details_page.dart';
-import 'package:flutter_recruitment_task/pages/movie_list/widgets/movie_card.dart';
+import 'package:movie_browser/bloc/movie_details_bloc/movie_details_bloc.dart';
+import 'package:movie_browser/generated/l10n.dart';
+import 'package:movie_browser/models/movie.dart';
+import 'package:movie_browser/pages/movie_details/movie_details_page.dart';
+import 'package:movie_browser/pages/movie_list/widgets/movie_card.dart';
 
 class MoviesList extends StatelessWidget {
   const MoviesList({

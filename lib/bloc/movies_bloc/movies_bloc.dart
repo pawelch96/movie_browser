@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:flutter_recruitment_task/injection/injection.dart';
-import 'package:flutter_recruitment_task/models/movie.dart';
-import 'package:flutter_recruitment_task/repositories/movie_repository.dart';
+import 'package:movie_browser/injection/injection.dart';
+import 'package:movie_browser/models/movie.dart';
+import 'package:movie_browser/repositories/movie_repository.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'movies_bloc.freezed.dart';

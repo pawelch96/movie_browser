@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:flutter_recruitment_task/models/movie.dart';
-import 'package:flutter_recruitment_task/models/movie_details.dart';
-import 'package:flutter_recruitment_task/models/movie_list.dart';
 import 'package:http/http.dart' as http;
 import 'package:injectable/injectable.dart';
+import 'package:movie_browser/models/movie.dart';
+import 'package:movie_browser/models/movie_details.dart';
+import 'package:movie_browser/models/movie_list.dart';
 
 abstract class ApiService {
   Future<List<Movie>> searchMovies(String query);

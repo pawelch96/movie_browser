@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_recruitment_task/bloc/movie_details_bloc/movie_details_bloc.dart';
-import 'package:flutter_recruitment_task/pages/movie_details/widgets/movie_details_view.dart';
-import 'package:flutter_recruitment_task/pages/shared/error_widget.dart';
+import 'package:movie_browser/bloc/movie_details_bloc/movie_details_bloc.dart';
+import 'package:movie_browser/pages/movie_details/widgets/movie_details_view.dart';
+import 'package:movie_browser/pages/shared/error_widget.dart';
 
 class MovieDetailsPage extends StatelessWidget {
   const MovieDetailsPage({

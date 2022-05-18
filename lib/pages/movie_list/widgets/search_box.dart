@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_recruitment_task/generated/l10n.dart';
+import 'package:movie_browser/generated/l10n.dart';
 
 class SearchBox extends StatelessWidget {
   final void Function(String)? onSubmitted;

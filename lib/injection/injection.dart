@@ -1,6 +1,6 @@
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
-import 'package:flutter_recruitment_task/injection/injection.config.dart';
+import 'package:movie_browser/injection/injection.config.dart';
 
 final GetIt getIt = GetIt.instance;
 

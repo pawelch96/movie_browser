@@ -1,12 +1,12 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:dartz/dartz.dart';
-import 'package:flutter_recruitment_task/bloc/movies_bloc/movies_bloc.dart';
-import 'package:flutter_recruitment_task/models/movie.dart';
-import 'package:flutter_recruitment_task/repositories/movie_repository.dart';
-import 'package:flutter_recruitment_task/services/api_service.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:get_it/get_it.dart';
 import 'package:mocktail/mocktail.dart';
+import 'package:movie_browser/bloc/movies_bloc/movies_bloc.dart';
+import 'package:movie_browser/models/movie.dart';
+import 'package:movie_browser/repositories/movie_repository.dart';
+import 'package:movie_browser/services/api_service.dart';
 
 class MockApiService extends Mock implements ApiServiceImpl {}
 

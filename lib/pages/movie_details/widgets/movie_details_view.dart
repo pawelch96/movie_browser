@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_recruitment_task/generated/l10n.dart';
-import 'package:flutter_recruitment_task/models/movie_details.dart';
-import 'package:flutter_recruitment_task/pages/movie_details/widgets/move_detail.dart';
-import 'package:flutter_recruitment_task/utils.dart';
+import 'package:movie_browser/generated/l10n.dart';
+import 'package:movie_browser/models/movie_details.dart';
+import 'package:movie_browser/pages/movie_details/widgets/move_detail.dart';
+import 'package:movie_browser/utils.dart';
 
 class MovieDetailsView extends StatelessWidget {
   final MovieDetails details;
